@@ -5,6 +5,7 @@ class Employee(Base):
     __tablename__ = "employees"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String)
-    email = Column(String)
-    department = Column(String)
+
+    name = Column(String(100))
+    email = Column(String(100))
+    department = Column(String(100))
