@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: office-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: office-frontend
+  template:
+    metadata:
+      labels:
+        app: office-frontend
+    spec:
+      containers:
+      - name: office-frontend
+        image: 854653744180.dkr.ecr.us-east-1.amazonaws.com/office-frontend:v1
+        ports:
+        - containerPort: 3000
