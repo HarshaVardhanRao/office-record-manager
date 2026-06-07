@@ -15,3 +15,4 @@ typing-inspection
 typing_extensions
 uvicorn
 pymysql
+python-multipart
